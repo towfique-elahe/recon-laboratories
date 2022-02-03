@@ -356,6 +356,11 @@ footer img{
 /* footer ends here */
 
 /* responsive starts */
+@media only screen and (max-width: 600px){
+    header .user{
+        display: none;
+    }
+}
 @media only screen and (max-width: 425px){
     html{
         font-size: 13px;
@@ -363,9 +368,6 @@ footer img{
     body{
         padding: .3rem;
         padding-bottom: 1.8rem;
-    }
-    header .user{
-        display: none;
     }
     #sideMenu .btn{
         right: 7px;
