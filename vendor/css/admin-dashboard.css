@@ -1,0 +1,143 @@
+
+#dashboard{
+    width: 100%;
+    display: flex;
+    flex: 50%;
+    gap: .5rem;
+}
+#dashboard .flex-left{
+    flex: 66.66666666666667%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+#dashboard .flex-left .row{
+    display: flex;
+    gap: .5rem;
+}
+#dashboard .flex-left .col1{
+    flex: 50%;
+}
+#dashboard .flex-left .col2{
+    flex: 50%;
+}
+#dashboard .flex-right{
+    flex: 33.33333333333333%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+#dashboard .flex-right .row{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+/* status items stats */
+.status-box{
+    width: 100%;
+    height: 150px;
+    border-radius: .5rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    color: var(--c0);
+    padding: .5rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.status-box:hover{
+    box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.25);
+}
+.status-box:hover ion-icon{
+    transform: rotate(360deg);
+}
+.status-box .top, .status-box .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.status-box .bottom{
+    align-items: flex-end;
+}
+.status-box a{
+    color: var(--c0);
+}
+.status-box .title{
+    font-size: 1.2rem;
+    max-width: 250px;
+    text-align: right;
+}
+.status-box .status{
+    font-size: 5rem;
+    letter-spacing: .5rem;
+    margin-bottom: -.3rem;
+}
+.item1, .item2{
+    background: #FFD6D9B2;
+}
+.item1:hover, .item2:hover{
+    background: #ffd6d9;
+}
+.item3, .item4{
+    background: #FFE5A7CC;
+}
+.item3:hover, .item4:hover{
+    background: #ffe5a7;
+}
+.item5, .item6{
+    background: #E1E1E1B2;
+}
+.item5:hover, .item6:hover{
+    background: #e1e1e1;
+}
+.item7, .item8{
+    background: #C3FFBCB2;
+}
+.item7:hover, .item8:hover{
+    background: #c3ffbc;
+}
+.item9, .item10, .item11, .item12{
+    background: #D0E5FF99;
+}
+.item9:hover, .item10:hover, .item11:hover, .item12:hover{
+    background: #d0e5ff;
+}
+/* status items ends here */
+
+@media only screen and (max-width: 810px){
+    #dashboard{
+        flex-direction: column;
+    }
+    #dashboard .flex-right .row{
+        flex-direction: row;
+    }
+    /* statis items */
+    .item1, .item2{
+        background: #ffd6d9;
+    }
+    .item3, .item4{
+        background: #ffe5a7;
+    }
+    .item5, .item6{
+        background: #e1e1e1;
+    }
+    .item7, .item8{
+        background: #c3ffbc;
+    }
+    .item9, .item10, .item11, .item12{
+        background: #d0e5ff;
+    }
+}
+@media only screen and (max-width: 425px){
+    #dashboard .flex-left .row{
+        flex-direction: column;
+    }
+    #dashboard .flex-right .row{
+        flex-direction: column;
+    }
+}

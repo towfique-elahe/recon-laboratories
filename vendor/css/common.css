@@ -1,0 +1,384 @@
+/* universal selections start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: ease .4s;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background: var(--c0);
+    color: var(--c3);
+}
+/* universal selections ends here */
+
+/* chrome scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--c0);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--c5);
+    border-radius: 10px;
+}
+
+/* fonts start */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    /* firefox scrollbar */
+    scrollbar-color: var(--c0) var(--c3);
+}
+/* fonts ends here */
+
+/* roots starts */
+:root{
+    --c0: #332a7ae0;
+    --c1: #03234B;
+    --c2: #093367;
+    --c3: #D0E5FF;
+    --c4: #d0e5ffbe;
+    --c5: #cc3743e5;
+    --positive: #C3E574;
+    --negative: #E62E3C;
+}
+/* roots ends here */
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #a49fc2;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+/* main starts */
+main{
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #d0e5ff3a;
+}
+/* main ends here */
+
+
+/* sidebar starts */
+#sidebar{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+#sidebar .logo{
+    width: 100%;
+    height: 2.6rem;
+    background: var(--c4);
+    padding: .2rem;
+    border-radius: .4rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+#sidebar .logo:hover{
+    background: var(--c3);
+}
+#sidebar .logo img{
+    width: 180px;
+}
+#sideMenu{
+    width: 100%;
+    height: 100%;
+    background: var(--c4);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+    padding: .3rem;
+    overflow-x: hidden;
+    position: relative;
+}
+#sidebar ion-icon{
+    font-size: 1.3rem;
+    color: var(--c0);
+}
+#sidebar .btn{
+    position: absolute;
+    right: .4rem;
+    top: .2rem;
+}
+#sidebar .toggle a{
+    color: var(--c0);
+}
+#sidebar .item:hover ion-icon{
+    transform: rotate(360deg);
+}
+#sidebar #open{
+    display: none;
+}
+#sidebar .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+#sidebar .menu a{
+    color: var(--c0);
+}
+#sidebar .sub{
+    font-size: .6rem;
+    font-weight: lighter;
+    letter-spacing: .15rem;
+    color: var(--c0);
+}
+#sidebar .top{
+    width: 180px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+#sidebar .container{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+#sidebar .block{
+    display: flex;
+    flex-direction: column;
+    border-radius: .2rem;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+#sidebar .block a{
+    color: var(--c3);
+}
+#sidebar .block ion-icon{
+    color: var(--c3);
+}
+#sidebar .item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .2rem;
+    border-radius: .2rem;
+}
+#sidebar .item:hover{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    background: var(--c0);
+    color: var(--c3);
+}
+#sidebar .item:hover ion-icon{
+    color: var(--c3);
+}
+#sidebar .block .item{
+    background: var(--c0);
+    border-radius: 0;
+}
+#sidebar .block .item:hover{
+    background: var(--c3);
+    color: var(--c0);
+}
+#sidebar .block .item:hover ion-icon{
+    color: var(--c0);
+}
+#sidebar .head{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .2rem;
+    background: var(--c5) !important;
+    color: var(--c3);
+}
+#sidebar .bottom{
+    width: 180px;
+}
+#sidebar .bottom a{
+    color: var(--c0);
+}
+#sidebar .bottom ion-icon{
+    color: var(--c0);
+}
+/* sidebar ends here */
+
+
+/* main body starts */
+#main{
+    width: 100%;
+    height: 100%;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-left: 0;
+}
+/* main body ends here */
+
+
+/* header starts */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--c0);
+}
+header .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+header .title{
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+header .nav{
+    font-size: .8rem;
+}
+header .nav a{
+    color: var(--c0);
+}
+header .user{
+    width: 100%;
+    background: var(--c0);
+    padding: .2rem;
+    padding-right: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+header .user:hover{
+    background: var(--c3);
+}
+header .user:hover .username{
+    color: var(--c0);
+}
+header .user:hover .userimg{
+    transform: rotate(360deg);
+}
+header .userimg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 2px var(--c3);
+}
+header .userimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .username{
+    color: var(--c3);
+    font-size: .8rem;
+}
+/* header ends here */
+
+
+/* main body stats */
+.main-body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    padding: .5rem;
+    background: #d0e5ff33;
+    border-radius: .5rem;
+}
+.main-body .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .6;
+    filter: blur(.1rem);
+    z-index: -1;
+    animation: bg 4s infinite;
+}
+.main-body .bg img{
+    width: 15rem;
+}
+.body{
+    width: 100%;
+    height: 100%;
+}
+@keyframes bg{
+    0%{
+        opacity: .1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .1;
+    }
+}
+/* main body ends here */
+
+
+/* footer starts */
+footer{
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: lighter;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--c0);
+}
+footer img{
+    height: 1.2rem;
+}
+/* footer ends here */
+
+/* responsive starts */
+@media only screen and (max-width: 425px){
+    html{
+        font-size: 13px;
+    }
+    body{
+        padding: .3rem;
+        padding-bottom: 1.8rem;
+    }
+    header .user{
+        display: none;
+    }
+    #sideMenu .btn{
+        right: 7px;
+    }
+    #sidebar ion-icon{
+        font-size: 1.7rem;
+    }
+    #sidebar .item{
+        padding: .5rem .2rem;
+        font-size: .8rem;
+    }
+    #sidebar .top, #sidebar .bottom, #logo{
+        width: 150px !important;
+    }
+}
+/* responsive ends here */
