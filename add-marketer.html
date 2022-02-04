@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Marketer | Recon Laboratories Ltd</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./vendor/logo/recon-icon.svg" type="image/x-icon">
+    <!-- css files -->
+    <link rel="stylesheet" href="./vendor/css/common.css">
+    <link rel="stylesheet" href="./vendor/css/add-form.css">
+</head>
+
+<body>
+    <!-- main starts -->
+    <main>
+        <!-- sidebar starts -->
+        <section id="sidebar">
+            <a href="#" class="logo">
+                <img id="logo" src="./vendor/logo/recon-logo.svg" alt="">
+            </a>
+
+            <div class="menu" id="sideMenu">
+                <a id="close" class="btn" href="javascript:void(0)" onclick="closeNav()" on2nslclick="openNav()">
+                    <ion-icon name="caret-back-circle"></ion-icon>
+                </a>
+                <a id="open" class="btn" href="javascript:void(0)" onclick="openNav()">
+                    <ion-icon name="caret-forward-circle"></ion-icon>
+                </a>
+
+                <!-- top section -->
+                <div class="top">
+                    <div class="container">
+                        <a href="./admin-dashboard.html">
+                            <div class="item">
+                                <ion-icon name="grid"></ion-icon>
+                                <p>Dashboard</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="container">
+                        <p class="sub" id="sub1">PRODUCT & ORDER</p>
+                        <div class="block">
+                            <div class="head">
+                                <ion-icon name="bag"></ion-icon>
+                                <p>Product</p>
+                            </div>
+                            <a href="./add-product.html">
+                                <div class="item">
+                                    <ion-icon name="bag-add"></ion-icon>
+                                    <p>Add Product</p>
+                                </div>
+                            </a>
+                            <a href="./add-product-item.html">
+                                <div class="item">
+                                    <ion-icon name="add-circle"></ion-icon>
+                                    <p>Add Product Item</p>
+                                </div>
+                            </a>
+                            <a href="./product-list.html">
+                                <div class="item">
+                                    <ion-icon name="list-circle"></ion-icon>
+                                    <p>Product Stock List</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block">
+                            <div class="head">
+                                <ion-icon name="cart"></ion-icon>
+                                <p>Order</p>
+                            </div>
+                            <a href="./order-list.html">
+                                <div class="item">
+                                    <ion-icon name="list"></ion-icon>
+                                    <p>Order List</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="container">
+                        <p class="sub" id="sub2">CHEMIST & MARKETER</p>
+                        <div class="block">
+                            <div class="head">
+                                <ion-icon name="person-circle"></ion-icon>
+                                <p>Chemist</p>
+                            </div>
+                            <a href="./add-chemist.html">
+                                <div class="item">
+                                    <ion-icon name="add-circle"></ion-icon>
+                                    <p>Add Chemist</p>
+                                </div>
+                            </a>
+                            <a href="./chemist-list.html">
+                                <div class="item">
+                                    <ion-icon name="people-circle"></ion-icon>
+                                    <p>Chemist List</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block">
+                            <div class="head">
+                                <ion-icon name="person"></ion-icon>
+                                <p>Marketer</p>
+                            </div>
+                            <a href="./add-marketer.html">
+                                <div class="item">
+                                    <ion-icon name="person-add"></ion-icon>
+                                    <p>Add Marketer</p>
+                                </div>
+                            </a>
+                            <a href="./marketer-list.html">
+                                <div class="item">
+                                    <ion-icon name="people"></ion-icon>
+                                    <p>Marketer List</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- bottom section -->
+                <div class="bottom">
+                    <a href="./admin-profile.html">
+                        <div class="item">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <p>Admin Profile</p>
+                        </div>
+                    </a>
+                    <a href="./logout.html">
+                        <div class="item">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                            <p>Logout</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- sidebar ends here -->
+
+        <!-- main body start -->
+        <section id="main">
+            <!-- header starts -->
+            <header>
+                <div class="left">
+                    <div class="page">
+                        <h1 class="title">Add Marketer</h1>
+                        <p class="nav">
+                            <a href="./admin-dashboard.html">Dashboard</a> > <a href="./marketer-list.html">Marketer
+                                List</a> > <a href="./add-marketer.html">Add Marketer</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <a href="./admin-profile.html">
+                        <div class="user">
+                            <div class="userimg">
+                                <img src="https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                            </div>
+                            <h3 class="username">
+                                Admin of Recon
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+            </header>
+            <!-- header ends here -->
+
+            <!-- main body starts -->
+            <section class="main-body">
+                <!-- body -->
+                <section class="body" id="addForm">
+
+                    <div class="left">
+                        <img src="./vendor/images/add-marketer-image.svg" alt="">
+                    </div>
+
+                    <!-- add marketer form -->
+                    <div class="right">
+                        <form action="" method="get">
+                            <h3 class="heading">Add Marketer</h3>
+                            <input type="text" name="marketer_name" id="" placeholder="Marketer Name" required>
+                            <input type="number" name="marketer_nid_number" id="" placeholder="Marketer's NID" min="0"
+                                required>
+                            <input type="email" name="marketer_gmail" id="" placeholder="Marketer's Gmail" required>
+                            <input type="tel" name="marketer_phone_number" id="" placeholder="Marketer's Phone Number"
+                                required>
+                            <input type="text" name="marketer_password" id="" placeholder="Marketer's Password"
+                                required>
+                            <input type="file" name="marketer_profile_picture" id="">
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- background -->
+                <div class="bg">
+                    <img src="./vendor/logo/recon-icon.svg" alt="">
+                </div>
+            </section>
+            <!-- main body ends here -->
+        </section>
+        <!-- main body ends here -->
+    </main>
+    <!-- main ends here -->
+
+    <!-- footer starts -->
+    <footer>
+        <p>&#169;2022 Recon | Design and Developed by</p>
+        <a href="https://kreetive.com">
+            <img src="./vendor/logo/kreetive-logo-white.svg" alt="Kreetive">
+        </a>
+    </footer>
+    <!-- footer ends here -->
+
+    <!-- commmon js file -->
+    <script src="./vendor/js/common.js"></script>
+    <!-- ionicons integration -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -382,5 +382,8 @@ footer img{
     #sidebar .top, #sidebar .bottom, #logo{
         width: 150px !important;
     }
+    header .page .nav{
+        display: none;
+    }
 }
 /* responsive ends here */
