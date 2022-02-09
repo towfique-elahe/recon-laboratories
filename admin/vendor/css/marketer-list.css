@@ -1,0 +1,164 @@
+/* add product */
+header #add-marketer{
+    width: 2rem;
+    height: 2rem;
+    background: var(--c0);
+    color: var(--c3);
+    font-size: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header #add-marketer:hover{
+    background: var(--c3);
+    color: var(--c0);
+}
+header #add-marketer:hover ion-icon{
+    transform: rotate(360deg);
+}
+header #add-marketer ion-icon{
+    margin-top: -.1rem;
+    margin-left: -.1rem;
+}
+
+/* product list */
+#marketer-list{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: .8rem;
+}
+#marketer-list .search{
+    width: 100%;
+    background: var(--c4);
+    color: var(--c0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2rem .5rem;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+#marketer-list .search:hover{
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+}
+#marketer-list .search input{
+    width: 97%;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--c0);
+    letter-spacing: 1px;
+}
+#marketer-list .head{
+    background: var(--c0);
+    color: var(--c3);
+    font-size: .9rem;
+}
+#marketer-list .head .c2{
+    width: 2rem;
+}
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .3rem;
+    border-radius: .4rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+}
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8{
+    word-wrap: break-word;
+}
+.c1, .c2, .c4, .c5{
+    width: 4rem;
+    text-align: center;
+}
+.c3{
+    width: 10rem;
+    text-align: left;
+}
+#marketers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+#marketers .marketer{
+    background: var(--c4);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    color: var(--c0);
+}
+#marketers .marketer .image{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#marketers .marketer .image img{
+    width: 100%;
+}
+#marketers .marketer .c5 ion-icon{
+    font-size: 1rem;
+    padding: .3rem;
+    border-radius: .3rem;
+    background: var(--c0);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    color: var(--c3);
+}
+#marketers .marketer .active ion-icon{
+    padding: .1rem;
+    font-size: 1.3rem;
+    background: var(--c0);
+    color: var(--positive);
+    border-radius: 50%;
+}
+#marketers .marketer .deactive ion-icon{
+    padding: .1rem;
+    font-size: 1.3rem;
+    background: var(--c3);
+    border: var(--negative) solid 1px;
+    color: var(--negative);
+    border-radius: 50%;
+}
+#marketers .marketer:hover{
+    background: var(--c3);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+}
+#marketers .marketer:hover{
+    background: var(--c3);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+}
+#marketers .marketer:hover .c5 ion-icon{
+    transform: rotate(360deg);
+}
+
+/* responsive start */
+@media only screen and (max-width: 810px) {
+    .c3{
+        width: 6rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    #marketer-list .head{
+        font-size: .7rem;
+    }
+    #marketer-list .search input{
+        font-size: .7rem;
+    }
+    .c2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .c1, .c4, .c5{
+        width: 2.8rem;
+    }
+    .c3{
+        width: 4rem;
+    }
+}
+/* responsive ends here */

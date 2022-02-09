@@ -1,0 +1,96 @@
+/* add product */
+header #add-product{
+    width: 2rem;
+    height: 2rem;
+    background: var(--c0);
+    color: var(--c3);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header #add-product:hover{
+    background: var(--c3);
+    color: var(--c0);
+}
+header #add-product:hover ion-icon{
+    transform: rotate(360deg);
+}
+header #add-product ion-icon{
+    margin-top: -.2rem;
+}
+
+/* product stock starts */
+#product-stock{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+#product-stock .search{
+    width: 100%;
+    background: var(--c4);
+    color: var(--c0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2rem .5rem;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+#product-stock .search:hover{
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+}
+#product-stock .search input{
+    width: 97%;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--c0);
+    letter-spacing: 1px;
+}
+#stock{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: flex-start;
+}
+#stock .product{
+    display: inline-block;
+    width: 100%;
+    max-width: 10.5rem;
+    height: 200px;
+    background: var(--c4);
+    color: var(--c0);
+    padding: .5rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
+#stock .product:hover{
+    background: var(--c3);
+    box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.25);
+}
+#stock .product .top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+#stock .name{
+    font-size: 1.5rem;
+}
+#stock .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+#stock .amount{
+    font-size: 3.5rem;
+}
+/* product stock ends here */

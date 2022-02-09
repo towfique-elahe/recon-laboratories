@@ -1,0 +1,168 @@
+/* add product */
+header #add-product{
+    width: 2rem;
+    height: 2rem;
+    background: var(--c0);
+    color: var(--c3);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header #add-product:hover{
+    background: var(--c3);
+    color: var(--c0);
+}
+header #add-product:hover ion-icon{
+    transform: rotate(360deg);
+}
+header #add-product ion-icon{
+    margin-top: -.2rem;
+}
+
+/* product list */
+#product-list{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: .8rem;
+}
+#product-list .search{
+    width: 100%;
+    background: var(--c4);
+    color: var(--c0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2rem .5rem;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+#product-list .search:hover{
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+}
+#product-list .search input{
+    width: 97%;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--c0);
+    letter-spacing: 1px;
+}
+#product-list .head{
+    background: var(--c0);
+    color: var(--c3);
+    font-size: .9rem;
+}
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .3rem;
+    border-radius: .4rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+}
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8{
+    word-wrap: break-word;
+}
+.c1, .c8{
+    width: 4rem;
+    text-align: center;
+}
+.c4, .c5, .c6{
+    width: 6rem;
+    text-align: right;
+}
+.c3, .c7{
+    width: 7rem;
+    text-align: center;
+}
+.c2{
+    width: 10rem;
+}
+#products{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+#products .product{
+    background: var(--c4);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    color: var(--c0);
+}
+#products .product ion-icon{
+    font-size: 1rem;
+    padding: .3rem;
+    border-radius: .3rem;
+    background: var(--c0);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    color: var(--c3);
+}
+#products .product:hover{
+    background: var(--c3);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+}
+#products .product:hover{
+    background: var(--c3);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+}
+#products .product:hover ion-icon{
+    transform: rotate(360deg);
+}
+
+/* responsive start */
+@media only screen and (max-width: 1072px){
+    .c1, .c8{
+        width: 3.2rem;
+    }
+    .c4, .c5, .c6{
+        width: 3.1rem;
+    }
+    .c3, .c7{
+        width: 5.4rem;
+    }
+    .c2{
+        width: 6rem;
+    }
+}
+@media only screen and (max-width: 1072px){
+    .c1, .c8{
+        width: 3.2rem;
+    }
+    .c4, .c5, .c6{
+        width: 3.1rem;
+    }
+    .c3, .c7{
+        width: 5.4rem;
+    }
+    .c2{
+        width: 6rem;
+    }
+}
+@media only screen and (max-width: 810px){
+    .c5, .c6, .c7{
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px){
+    .c4{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    #product-list .head{
+        font-size: .7rem;
+    }
+    #product-list .search input{
+        font-size: .7rem;
+    }
+    .c3{
+        display: none;
+    }
+}
+/* responsive ends here */
